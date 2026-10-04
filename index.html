@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PulseAI – Medical Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="aurora"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div></div>
+<div class="glow" id="glow"></div>
+
+<main class="app">
+  <header>
+    <div class="logo" aria-hidden="true">🩺</div>
+    <div class="title">
+      <h1>PulseAI</h1>
+      <p><span class="dot"></span>Answers from Medical_book.pdf · Groq + Pinecone RAG</p>
+    </div>
+    <svg class="ecg" viewBox="0 0 150 40" aria-hidden="true"><path d="M0 22 H40 L48 22 L54 6 L62 36 L69 14 L74 22 H150"/></svg>
+  </header>
+
+  <div class="alert"><b>Heads up:</b> I give general health information, not a diagnosis. In an emergency, call your local emergency number right away.</div>
+
+  <section id="chat" aria-live="polite"></section>
+
+  <div class="chips" id="chips">
+    <button class="chip">🫀 What causes high blood pressure?</button>
+    <button class="chip">🩸 Symptoms of diabetes</button>
+    <button class="chip">🫁 How is asthma treated?</button>
+    <button class="chip">🧬 What is anemia?</button>
+  </div>
+
+  <div class="composer">
+    <input id="input" type="text" placeholder="Describe your symptoms or ask a question…" autocomplete="off" aria-label="Message">
+    <button id="send" aria-label="Send message">➤</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
